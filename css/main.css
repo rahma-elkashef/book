@@ -1,0 +1,105 @@
+*::selection{
+    background-color: #FEC260;
+}
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    position: relative;
+    z-index: 50;overflow: hidden;
+    width: fit-content;
+
+}
+h1::before{
+    content: '';
+    width: 280px;
+    height: 100%;
+    background-color: #FEC260;
+    position: absolute;
+    top: 75%;
+    left: 10px;
+    z-index: -5;
+    transition:all 0.3s;
+}
+h1:hover::before{
+   translate: 0px -25px;
+}
+.header{
+    width: 80%;
+    margin: auto;
+    border-bottom:dotted #000 2px ;
+}
+.descrep{
+        font-family: "Righteous", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+       background-image: linear-gradient(to right, #3ca55c 0%, #b5ac49 70%);
+      background-clip: text;
+       color: transparent;
+}
+.add{
+    width: 80%;
+    margin: auto;
+    font-family: "PT Sans Caption", sans-serif;
+ 
+}
+.add label{
+    font-weight: 600;
+    color: 
+    rgb(33, 37, 41);
+    font-size: 20px;
+}
+.add input{
+    font-weight: 400;
+   height: 35px;
+   border: none;
+}
+.add button{
+    background-color: #D1512D;
+    color: #FFF;
+}
+.add .my-btn{
+    border-bottom: dotted #000 2px;
+}
+.add button:hover{
+    background-color: #BB4120;
+}
+.my-form-control{
+    box-shadow: #FADEB4 2px ;
+}
+input.form-control:focus {
+    border: #D99C39 2px solid;
+    box-shadow: 0 0 0 0.2rem  #FADEB4 ;
+}
+.my-table{
+    width: 80%;
+    margin: auto;
+}
+.my-table .my-delete{
+    background-color: #EB1D36;
+    color: #FFF;
+    border: none;
+}
+.my-table .my-delete:hover{
+    background-color: #D30820;
+}
+.my-table .visit{
+    background-color: #9EB23B;
+    color: #FFF;
+    border: none;
+}
+.my-table .visit:hover{
+    background-color: #8A9E23;
+}
+ @media screen and (max-width: 575.98px) {
+        .header{
+            width: 100%;
+        }
+        .my-table{
+            width: 100%;
+        }
+      
+     }

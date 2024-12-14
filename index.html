@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+            <!-- ............................. google fonts link............................................. -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+        <!-- ............................. fontawesome link............................................. -->
+<link rel="stylesheet" href="css/all.min.css">
+<!-- .............................bootstrap link............................................. -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- .............................css file............................................. -->
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header mt-4 pb-5">
+    <h1 class="text-center  m-auto pt-4 pb-1 mb-4 ">Bookmarker</h1>
+   </div>
+   <p class="text-center descrep my-4"> <i class="bi bi-bookmark-fill"></i> Bookmark your favorite sites <i class="bi bi-bookmark-fill"></i></p>
+   <div class="add ">
+    <div  class="bookmark-name ps-4 mb-4">
+        <label for="bMname" class="mb-2"><i class="bi bi-journal-bookmark-fill"></i> Site Name</label>
+        <div class="for-input">
+            <input type="text"id="bMname" oninput="checkName()"  name="name"  placeholder="Bookmark Name" class="form-control w-100 rounded-1 ps-2">
+        </div>
+    </div>
+    <div  class="bookmark-url ps-4">
+        <label for="bMurl" class="mb-2"><i class="bi bi-link-45deg"></i> Site URL</label>
+        <div class="for-input">
+            <input type="text" id="bMurl" oninput="checkUrl()" name="url"  placeholder="Website URL" class="form-control rounded-1 ps-2">
+    </div>
+
+   </div>
+   <div class="my-btn text-center my-4 pb-4 ">
+    <button type="submit" class="rounded-1 px-5 py-2 border-0" onclick="submit()">Submit</button>
+   </div>
+
+   </div>
+   <table class="table my-table mb-4">
+    <thead>
+      <tr>
+        <th scope="col"class="text-center"> Index</th>
+        <th scope="col"class="text-center">Website Name</th>
+        <th scope="col"class="text-center">Visit</th>
+        <th scope="col"class="text-center">Delete</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+     
+       
+    </tbody>
+  </table>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
